@@ -5,7 +5,8 @@ import gql from 'graphql-tag';
 import './app.css';
 import 'typeface-roboto-mono';
 
-import {Navigtion} from './Navigation';
+import {Navigation} from './Navigation';
+import {Loading} from './Loading';
 
 const getCharacters = gql`
   query AllCharacters{
@@ -27,16 +28,22 @@ function App() {
     query: getCharacters
   });
 
-  return (
-    <div>
-      <div className="page-wrapper"><aside className="sidebar">
-        {res.fetching ? <h2>Loading</h2> :  <Navigtion items={res.data}/>}
-      </aside>
-      <div className="content">
-      
-      </div></div>
-    </div>
-  );
+  if (res.fetching || typeof res.data === 'undefined') {
+    return (
+      <Loading />
+    )
+  } else {
+    return (
+      <div>
+        <div className="page-wrapper">
+          <aside className="sidebar">
+            <Navigation items={res.data.characters.results}/>
+          </aside>
+          <div className="content"></div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
