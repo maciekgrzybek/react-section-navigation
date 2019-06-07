@@ -1,14 +1,16 @@
 import React from 'react';
 
-export function Navigtion({items}) {
-  console.log(items)
+export function Navigation({items}) {
+
+  function renderItems() {
+    return items.slice(0, 6).map(item => {
+      return (
+        <li key={item.name} className="navigation-list-item">{item.name}</li>
+      )
+    })
+  }
+
   return (
-    <ul>
-      <li>Episode 1</li>
-      <li>Episode 2</li>
-      <li>Episode 3</li>
-      <li>Episode 4</li>
-      <li>Episode 5</li>
-    </ul>
+    <ul className="navigation-list">{renderItems()}</ul>
   )
 };
