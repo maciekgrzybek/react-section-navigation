@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "typeface-roboto-mono": "0.0.54",
+    "urql": "^1.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
