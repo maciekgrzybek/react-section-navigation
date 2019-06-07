@@ -1,0 +1,16 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  min-height: 300vh;
+}
+.sidebar {
+  flex: 1;
+}
+.content {
+  flex: 4;
+}
