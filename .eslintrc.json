@@ -1,0 +1,23 @@
+{
+  "extends": ["eslint:recommended", "google", "plugin:react/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true
+    }
+  },
+  "globals": {
+    "window": true,
+    "setTimeout": true,
+    "IntersectionObserver": true,
+    "document": true
+  },
+  "rules": {
+    "require-jsdoc" : 0,
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": 0
+  },
+  "plugins": ["react-hooks"]
+}
