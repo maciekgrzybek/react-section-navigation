@@ -1,18 +1,42 @@
 /* General styles */
+* {
+  box-sizing: border-box;
+}
 body {
   color: #282c34;
   font-family: 'Roboto Mono', monospace;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+.page-title {
+  margin-bottom: 2rem;
+}
+.page-intro {
+  max-width: 700px;
+  margin-bottom: 3rem;
 }
 .page-wrapper {
+  padding: 20px 15px 20px;
   width: 100%;
+  max-width: 1300px;
   display: flex;
-  min-height: 300vh;
+  /* min-height: 300vh; */
 }
 .sidebar {
-  flex: 1;
+  display: none;
 }
-.content {
-  flex: 4;
+.footer {
+  font-size: 0.7rem;
+  background-color: #282c34;
+  color: white;
+  padding: 2rem 1rem;
+}
+.footer__content {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* Loading component styles */
@@ -39,14 +63,97 @@ body {
   }
 }
 
-/* Navigation styles */
-.navigation-list {
-  position: fixed;
-  top: 50%;
-  transform: translate3d(0,-50%,0);
-  left: 1rem;
-  list-style: none;
+
+
+/* Character block */
+.character-block {
+  display: flex;
+  margin-bottom: 2rem;
+  transition: .3s;
+  flex-direction: column;
 }
-.navigation-list-item {
+.character-block--active {
+  background: #faf575;
+}
+.character-block__image {
+  width: 100%;
+}
+.character-block__text {
+  padding: 1rem;
+}
+
+/* Ipad landscape */
+@media screen and (min-width: 768px) {
+  .page-wrapper {
+    padding-bottom: 120px;
+  }
+  .sidebar {
+    display: flex;
+    flex: 1;
+  }
+  .content {
+    flex: 2.1;
+  }
+  .character-block {
+    flex-direction: row;
+  }
+  .character-block__image {
+    margin-right: 2rem;
+    display: flex;
+    align-self: center;
+  }
+  .character-block__text {
+    padding: 0 1rem;
+    align-self: center;
+  }
+
+  /* Navigation styles */
+  .navigation-list {
+    position: fixed;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    left: -10px;
+    list-style: none;
+  }
+  .navigation-list__item {
+    font-size: 0.9rem;
+    max-width: 200px;
+    margin-bottom: 0.5em;
+    transition: .3s;
+    cursor: pointer;
+  }
+  .navigation-list__item:hover {
+    padding-left: 5px;
+    background: #faf575;
+  }
+  .navigation-list__item--active {
+    background: #faf575;
+    padding-left: 15px;
+  }
+}
+
+/* Ipad vertical */
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    min-width: 250px;
+  }
+  .content {
+    flex: 2.5;
+  }
+}
+/* Desktop styles */
+@media screen and (min-width: 1140px) {
+  .sidebar {
+    min-width: 250px;
+  }
+  .character-block {
+    margin-bottom: 5rem;
+  }
+  .character-block__image {
+    margin-right: 2rem;
   
+  }
+  .character-block__text {
+    align-self: center;
+  }
 }
