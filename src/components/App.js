@@ -17,6 +17,7 @@ const getCharacters = gql`
         count
       }
       results {
+        id
         name
         image
         species
