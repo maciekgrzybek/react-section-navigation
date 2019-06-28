@@ -7,13 +7,13 @@ export function Character({
   pageHeight = 100,
   refs,
 }) {
-  const observerMargin = `${Math.floor((pageHeight - 1) / 2)}px`;
+  const observerMargin = Math.floor(pageHeight / 2);
   const activeClass = activeCharacter === data.name
     ? 'character-block--active'
     : '';
   useEffect(() => {
     const observerConfig = {
-      rootMargin: `-${observerMargin} 0px -${observerMargin} 0px`,
+      rootMargin: `-${pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin}px 0px -${observerMargin}px 0px`,
     };
     const handleIntersection = function(entries) {
       entries.forEach((entry) => {
