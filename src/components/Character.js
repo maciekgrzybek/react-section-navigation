@@ -7,7 +7,6 @@ export function Character({
   pageHeight = 100,
   refs,
 }) {
-  
   const observerMargin = Math.floor(pageHeight / 2);
   const activeClass = activeCharacter === data.id
     ? 'character-block--active'
@@ -27,7 +26,7 @@ export function Character({
         handleIntersection,
         observerConfig);
     observer.observe(refs[data.name].current);
-  }, [activeCharacter, setActiveCharacter, observerMargin, refs, data]);
+  }, [activeCharacter, setActiveCharacter, observerMargin, refs, data, pageHeight]);
 
   return (
     <div

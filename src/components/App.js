@@ -56,9 +56,9 @@ function App() {
     );
   } else {
     const characters = res.data.characters.results.slice(0, 9);
-    const refs = characters.reduce((acc, value) => {
-      acc[value.name] = createRef();
-      return acc;
+    const refs = characters.reduce((refsObj, character) => {
+      refsObj[character.name] = createRef();
+      return refsObj;
     }, {});
     const handleCLick = (name) => {
       refs[name].current.scrollIntoView({

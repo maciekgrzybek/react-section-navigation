@@ -3,10 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.0.1",
     "graphql": "^14.3.1",
     "graphql-tag": "^2.10.1",
+    "intersection-observer": "^0.7.0",
     "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
     "typeface-roboto-mono": "0.0.54",
@@ -39,7 +40,8 @@
     "eslint": "^5.16.0",
     "eslint-config-google": "^0.13.0",
     "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0"
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "gh-pages": "^2.0.1"
   },
   "homepage": "https://maciekgrzybek.github.io/react-section-navigation/"
 }
