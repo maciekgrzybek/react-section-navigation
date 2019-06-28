@@ -12,11 +12,12 @@ import {Footer} from './Footer';
 
 const getCharacters = gql`
   query AllCharacters{
-    characters(filter: {name: "morty"}) {
+    characters(filter: {name: "rick"}) {
       info {
         count
       }
       results {
+        id
         name
         image
         species

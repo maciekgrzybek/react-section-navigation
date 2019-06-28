@@ -7,8 +7,9 @@ export function Character({
   pageHeight = 100,
   refs,
 }) {
+  
   const observerMargin = Math.floor(pageHeight / 2);
-  const activeClass = activeCharacter === data.name
+  const activeClass = activeCharacter === data.id
     ? 'character-block--active'
     : '';
   useEffect(() => {
@@ -32,7 +33,7 @@ export function Character({
     <div
       className={`character-block ${activeClass}`}
       ref={refs[data.name]}
-      id={data.name}>
+      id={data.id}>
       <div>
         <img src={data.image} alt="" className="character-block__image"/>
       </div>

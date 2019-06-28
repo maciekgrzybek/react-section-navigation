@@ -3,7 +3,7 @@ import React from 'react';
 export function Navigation({items, activeCharacter, handleCLick}) {
   function renderItems() {
     return items.map((item) => {
-      const activeClass = activeCharacter === item.name
+      const activeClass = activeCharacter === item.id
         ? 'navigation-list__item--active'
         : '';
       return (
