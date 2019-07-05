@@ -77,13 +77,13 @@ function App() {
           </aside>
           <div className="content">
             <div className="page-intro">
-              <h1 className="page-title">Check out these cool Morty&apos;s!</h1>
-              <p>This simple page is an example of using Intersection
+              <h1 className="page-title">Check out these cool Rick&apos;s!</h1>
+              <p>This is an example of using Intersection
                 Observer API with React.<br />
-                I&apos;ve created simple app to show how you can create side
+                I&apos;ve created this simple app to show how you can create side
                 navigation that will detect current visible section.
                 Read more on <a href="https://dev.to/maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-fg0" target="blank">dev.to</a> and <a href="https://medium.com/@maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-b01c5085307d">medium.com</a>
-                or check out the <a href="https://github.com/maciekgrzybek/react-section-navigation">repo</a>.
+                 or check out the <a href="https://github.com/maciekgrzybek/react-section-navigation">repo</a>.
               </p>
             </div>
             {
