@@ -26,6 +26,7 @@ export function Character({
         handleIntersection,
         observerConfig);
     observer.observe(refs[data.name].current);
+    return () => observer.disconnect(); // Clenaup the observer.
   }, [activeCharacter, setActiveCharacter, observerMargin, refs, data, pageHeight]);
 
   return (
