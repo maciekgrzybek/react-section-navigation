@@ -82,8 +82,7 @@ function App() {
                 Observer API with React.<br />
                 I&apos;ve created this simple app to show how you can create side
                 navigation that will detect current visible section.
-                Read more on <a href="https://dev.to/maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-fg0" target="blank">dev.to</a> and <a href="https://medium.com/@maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-b01c5085307d">medium.com</a>
-                 or check out the <a href="https://github.com/maciekgrzybek/react-section-navigation">repo</a>.
+                Read more on <a href="https://dev.to/maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-fg0" target="blank">dev.to</a> and <a href="https://medium.com/@maciekgrzybek/create-section-navigation-with-react-and-intersection-observer-b01c5085307d">medium.com</a> or check out the <a href="https://github.com/maciekgrzybek/react-section-navigation">repo</a>.
               </p>
             </div>
             {

@@ -4,7 +4,7 @@
     "ecmaVersion": 7,
     "sourceType": "module",
     "ecmaFeatures": {
-        "jsx": true
+      "jsx": true
     }
   },
   "globals": {
@@ -14,7 +14,7 @@
     "document": true
   },
   "rules": {
-    "require-jsdoc" : 0,
+    "require-jsdoc": 0,
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": 0

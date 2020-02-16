@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 
 export function Character({
   data,
@@ -8,12 +8,13 @@ export function Character({
   refs,
 }) {
   const observerMargin = Math.floor(pageHeight / 2);
-  const activeClass = activeCharacter === data.id
-    ? 'character-block--active'
-    : '';
+  const activeClass =
+    activeCharacter === data.id ? 'character-block--active' : '';
   useEffect(() => {
     const observerConfig = {
-      rootMargin: `-${pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin}px 0px -${observerMargin}px 0px`,
+      rootMargin: `-${
+        pageHeight % 2 === 0 ? observerMargin - 1 : observerMargin
+      }px 0px -${observerMargin}px 0px`,
     };
     const handleIntersection = function(entries) {
       entries.forEach((entry) => {
@@ -23,26 +24,43 @@ export function Character({
       });
     };
     const observer = new IntersectionObserver(
-        handleIntersection,
-        observerConfig);
+      handleIntersection,
+      observerConfig
+    );
     observer.observe(refs[data.name].current);
-    return () => observer.disconnect(); // Clenaup the observer.
-  }, [activeCharacter, setActiveCharacter, observerMargin, refs, data, pageHeight]);
+    return () => observer.disconnect(); // Clenaup the observer if component unmount.
+  }, [
+    activeCharacter,
+    setActiveCharacter,
+    observerMargin,
+    refs,
+    data,
+    pageHeight,
+  ]);
 
   return (
     <div
       className={`character-block ${activeClass}`}
       ref={refs[data.name]}
-      id={data.id}>
+      id={data.id}
+    >
       <div>
-        <img src={data.image} alt="" className="character-block__image"/>
+        <img src={data.image} alt="" className="character-block__image" />
       </div>
       <div className="character-block__text">
         <h2>{data.name}</h2>
-        <p><b>Status</b>: {data.status}</p>
-        <p><b>Location</b>: {data.location ? data.location.name : '-'}</p>
-        <p><b>Species</b>: {data.species}</p>
-        <p><b>Dimension</b>: {data.origin.dimension || '-'}</p>
+        <p>
+          <b>Status</b>: {data.status}
+        </p>
+        <p>
+          <b>Location</b>: {data.location ? data.location.name : '-'}
+        </p>
+        <p>
+          <b>Species</b>: {data.species}
+        </p>
+        <p>
+          <b>Dimension</b>: {data.origin.dimension || '-'}
+        </p>
       </div>
     </div>
   );
