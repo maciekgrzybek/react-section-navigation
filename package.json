@@ -10,8 +10,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "typeface-roboto-mono": "0.0.54",
-    "urql": "^1.0.5"
+    "typeface-roboto-mono": "0.0.54"
   },
   "scripts": {
     "predeploy": "npm run build",

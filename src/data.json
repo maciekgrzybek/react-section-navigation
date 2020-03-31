@@ -1,0 +1,269 @@
+{
+  "characters": {
+    "info": {
+      "count": 44
+    },
+    "results": [
+      {
+        "id": "2",
+        "name": "Morty Smith",
+        "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Earth (Replacement Dimension)"
+        },
+        "origin": {
+          "dimension": "Dimension C-137"
+        }
+      },
+      {
+        "id": "14",
+        "name": "Alien Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/14.jpeg",
+        "species": "Alien",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "18",
+        "name": "Antenna Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/18.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "21",
+        "name": "Aqua Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/21.jpeg",
+        "species": "Humanoid",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "27",
+        "name": "Artist Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/27.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "42",
+        "name": "Big Head Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/42.jpeg",
+        "species": "Human",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "43",
+        "name": "Big Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/43.jpeg",
+        "species": "Human",
+        "status": "Dead",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "44",
+        "name": "Body Guard Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/44.jpeg",
+        "species": "Human",
+        "status": "Dead",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "53",
+        "name": "Blue Shirt Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/53.jpeg",
+        "species": "Human",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "61",
+        "name": "Campaign Manager Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/61.jpeg",
+        "species": "Human",
+        "status": "Dead",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "73",
+        "name": "Cop Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/73.jpeg",
+        "species": "Human",
+        "status": "Dead",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "77",
+        "name": "Cowboy Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/77.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "83",
+        "name": "Cronenberg Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/83.jpeg",
+        "species": "Cronenberg",
+        "status": "unknown",
+        "location": {
+          "name": "Earth (C-137)"
+        },
+        "origin": {
+          "dimension": "Cronenberg Dimension"
+        }
+      },
+      {
+        "id": "84",
+        "name": "Cult Leader Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/84.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Hideout Planet"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "85",
+        "name": "Cyclops Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/85.jpeg",
+        "species": "Humanoid",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "95",
+        "name": "Dipper and Mabel Mortys",
+        "image": "https://rickandmortyapi.com/api/character/avatar/95.jpeg",
+        "species": "Human",
+        "status": "unknown",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "113",
+        "name": "Eric Stoltz Mask Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/113.jpeg",
+        "species": "Human",
+        "status": "unknown",
+        "location": {
+          "name": "Earth (Replacement Dimension)"
+        },
+        "origin": {
+          "dimension": "Eric Stoltz Mask Dimension"
+        }
+      },
+      {
+        "id": "118",
+        "name": "Evil Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/118.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "123",
+        "name": "Fat Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/123.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      },
+      {
+        "id": "143",
+        "name": "Glasses Morty",
+        "image": "https://rickandmortyapi.com/api/character/avatar/143.jpeg",
+        "species": "Human",
+        "status": "Alive",
+        "location": {
+          "name": "Citadel of Ricks"
+        },
+        "origin": {
+          "dimension": null
+        }
+      }
+    ]
+  }
+}
